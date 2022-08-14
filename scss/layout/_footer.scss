@@ -1,0 +1,141 @@
+.footer {
+    display: flex;
+    gap: 30px;
+    align-items: baseline;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A;
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+}
+
+.contacts-address {
+    font-style: normal;
+}
+
+.logo {
+    display: block;
+    margin-top: 24px;
+    margin-right: 93px;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    font-family: var(--logo-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+    color: var(--accent-cl);
+}
+
+.footer-logo {
+    display: block;
+    margin: 0 0 20px 0;
+    width: 145px;
+}
+
+.accent-ft {
+    color: var(--light-cl);
+}
+
+.footer-item {
+    margin-top: 10px;
+}
+
+.footer-contact {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-address {
+    color: #ffffff;
+}
+
+.footer-link {
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: #FFFFFF;
+}
+
+.footer__socials {
+    color: #ffffff;
+}
+
+.footer__form {
+    margin-left: auto;
+}
+
+.form {
+    gap: 8px;
+    margin-left: auto;
+}
+
+.form-title {
+    align-items: center;
+    justify-content: center;
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.form-subsc {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-input {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.03em;
+    /* identical to box height, or 125% */
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    margin-right: 12px;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: transparent;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.form-button {
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    /* identical to box height, or 188% */
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 29px;
+    background-color: var(--accent-cl);
+    cursor: pointer;
+    border: none;
+    transition-property: background-color;
+    transition: background-color var(--anim);
+}
+
+.form-icon {
+    cursor: pointer;
+}
+
+.form-button:hover,
+.form-button:focus {
+    background-color: #188CE8;
+}

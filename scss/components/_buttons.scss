@@ -1,0 +1,73 @@
+.bnt {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    gap: 8px;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+        color: var(--btn-txt-cl);
+        background-color: var(--accent-txt-cl);
+    }
+}
+
+.button-action {
+    max-width: 250px;
+    min-width: 160px;
+    max-height: 50px;
+    padding: 10px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-top: 30px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+    color: var(--btn-txt-cl);
+    background-color: var(--accent-cl);
+    cursor: pointer;
+    border: none;
+    transition-property: background-color;
+    transition: background-color var(--anim);
+    &:hover,
+    &:focus {
+        background-color: #188CE8;
+    }
+}
+
+.filter-list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.button-filter {
+    padding: 6px 22px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+    letter-spacing: 0.06em;
+    color: var(--title-txt-cl);
+    background-color: #F5F4FA;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition-property: background-color, color, box-shadow;
+    transition: background-color var(--anim), color var(--anim), box-shadow var(--anim);
+    &:hover,
+    &:focus {
+        color: #FFFFFF;
+        background-color: var(--accent-cl);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+
+
+/* активна кнопка */
+
+.current-item {
+    color: #FFFFFF;
+    background-color: var(--accent-cl);
+}
