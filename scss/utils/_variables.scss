@@ -1,14 +1,15 @@
-  :root {
-     /* fonts */
-     --main-font: 'Roboto', sans-serif;
-     --logo-font: 'Raleway', sans-serif;
-     /* colors */
-     --main-txt-cl: #757575;
-     --title-txt-cl: #212121;
-     --accent-cl: #2196F3;
-     --btn-txt-cl: #ffffff;
-     --dark-cl: #000000;
-     --light-cl: #ffffff;
-     /* others */
-     --anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
- }
+:root {
+    /* fonts */
+    --main-font: 'Roboto', sans-serif;
+    --logo-font: 'Raleway', sans-serif;
+    /* colors */
+    --main-txt-cl: #757575;
+    --title-txt-cl: #212121;
+    --accent-cl: #2196f3;
+    --btn-txt-cl: #ffffff;
+    --btn-cl: #188ce8;
+    --dark-cl: #000000;
+    --light-cl: #ffffff;
+    /* others */
+    --anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

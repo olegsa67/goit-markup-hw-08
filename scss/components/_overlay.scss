@@ -1,0 +1,25 @@
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    color: #ffffff;
+    background-color: rgba(33, 150, 243, 0.9);
+    transition: transform var(--anim);
+    &-text {
+        font-family: var(--main-font);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: calc(28 / 18);
+        /* or 156% */
+        letter-spacing: 0.03em;
+        text-align: left;
+        user-select: none;
+    }
+}
