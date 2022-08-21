@@ -1,14 +1,11 @@
 .logo {
-    display: block;
-    margin-top: 24px;
-    margin-right: 93px;
-    margin-bottom: 25px;
     font-family: var(--logo-font);
     font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31 / 26);
+    font-size: 24px;
+    line-height: calc(28 / 24);
     letter-spacing: 0.03em;
     color: var(--accent-cl);
+    outline: solid red;
 }
 
 .accent {

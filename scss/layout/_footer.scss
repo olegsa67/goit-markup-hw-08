@@ -2,40 +2,47 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2f303a;
-    font-family: var(--main-font);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
     &__container {
-        display: flex;
-        gap: 30px;
-        align-items: baseline;
-        justify-content: center;
+        width: 480px;
+        outline: solid red;
+        font-family: var(--main-font);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: calc(24 / 14);
+        letter-spacing: 0.03em;
     }
     &__logo {
-        display: block;
-        width: 145px;
-    }
-    &__item {
-        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 154px;
+        margin-bottom: 20px;
     }
     &__contact {
         color: rgba(255, 255, 255, 0.6);
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+    &__item {
+        display: flex;
+        margin: 0 auto;
+        margin-top: 8px;
+        justify-content: center;
     }
     &__address {
+        color: #ffffff;
+    }
+    &__socials {
+        margin-top: 20px;
         color: #ffffff;
     }
     &__link {
         background-color: rgba(255, 255, 255, 0.1);
         fill: #ffffff;
     }
-    &__socials {
-        color: #ffffff;
-    }
-    &__form {
-        margin-left: auto;
-    }
+    &__form {}
 }
 
 .contacts-address {

@@ -1,5 +1,4 @@
 .mail {
-    display: flex;
     transition: color var(--anim);
     margin-right: 30px;
     &:hover,
@@ -22,7 +21,6 @@
 }
 
 .phone {
-    display: flex;
     transition: color var(--anim);
     &:hover,
     &:focus {
@@ -44,7 +42,6 @@
 }
 
 .header__mail {
-    display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 32px;
@@ -64,7 +61,6 @@
 }
 
 .header__phone {
-    display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 32px;
