@@ -1,0 +1,107 @@
+.social {
+  @extend %list;
+
+  display: flex;
+  justify-content: center;
+}
+
+.burger-menu__social {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.social__item--team {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.burger-menu__social__item {
+  @media screen and (max-width: 767px) {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    &:not(:last-child) {
+      &::after {
+        content: '';
+        width: 1px;
+        height: 100%;
+        background-color: rgba(33, 33, 33, 0.2);
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.social__link {
+
+  @include centered-flex();
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  @include transition ((background-color, color));
+
+}
+
+.social__link-burger-menu {
+  @extend %link;
+}
+
+.social__name {
+  @extend %visually-hidden;
+}
+
+.social__name-burger-menu {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  text-transform: capitalize;
+}
+
+.social__link--team {
+  color: var(--primary-icon-fill);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--secondary-icon-fill);
+  }
+}
+
+.social__list--footer {
+  display: flex;
+}
+
+.social__item--footer {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social__link--footer {
+  background-color: var(--footer-icon-bg);
+  color: var(--secondary-icon-fill);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.social__icon {
+  fill: currentColor;
+}
+
+.social__icon--burger-menu {
+  display: none;
+}
+

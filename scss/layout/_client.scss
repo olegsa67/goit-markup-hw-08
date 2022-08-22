@@ -1,0 +1,64 @@
+.client {
+    @extend %section;
+}
+
+// .container {
+//     @extend %container;
+// }
+
+.client__title {
+    @extend %title-h2;
+}
+
+.client__list {
+    @extend %list;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 1199px) {
+        margin: -15px;
+
+    }
+}
+
+.client__item {
+    @media screen and (max-width: 767px) {
+        width: calc((100% - 15px*4)/2);
+        margin: 15px;
+    }
+
+    @media screen and (min-width:$tablet) and (max-width: 1199px) {
+        width: calc((100% - 15px*6)/3);
+        margin: 15px;
+    }
+
+    @media screen and (min-width:$desktop) {
+        width: calc((100% - 30px*5)/6);
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+}
+
+.client__link {
+    @extend %link;
+    @include centered-flex ();
+
+    height: 92px;
+    border: 1px solid var(--primary-icon-fill);
+    border-radius: 4px;
+    color: var(--primary-icon-fill);
+    @include transition((border-color, color));
+  
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+        color: var(--accent-color);
+    }
+}
+
+.client__icon {
+    fill: currentColor;
+}

@@ -1,17 +1,49 @@
 .logo {
-    font-family: var(--logo-font);
-    font-weight: 700;
+  @extend %link;
+
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+  @media screen and (max-width: 1199px) {
     font-size: 24px;
-    line-height: calc(28 / 24);
-    letter-spacing: 0.03em;
-    color: var(--accent-cl);
-    outline: solid red;
+    line-height: 1.16;
+  }
 }
 
-.accent {
-    color: var(--dark-cl);
+.logo--header {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 16px;
+    left: 15px;
+    z-index: 5;
+    opacity: 1;
+    pointer-events: initial;
+    transform: translateX(0);
+    @include transition((opacity, transform));
+   
+  }
 }
 
-.accent-ft {
-    color: var(--light-cl);
+@media screen and (max-width: 767px) {
+  .logo--hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(100%);
+  @include transition((opacity, transform));
+  }
+}
+
+.logo__accent {
+  color: var(--accent-color);
+}
+
+.logo--footer {
+  display: block;
+  color: var(--second-text-color);
+  margin-bottom: 20px;
 }

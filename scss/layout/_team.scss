@@ -1,49 +1,72 @@
 .team {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    margin-bottom: -30px;
-    background-color: #f5f4fa;
+    @extend %section;
+    background-color: var(--third-bgr-color);
     text-align: center;
-    letter-spacing: 0.03em;
-    &__title {
-        margin-bottom: 30px;
-        font-weight: 700;
-        font-size: 28px;
-        line-height: calc(33 / 28);
-        text-align: center;
-        letter-spacing: 0.03em;
-        color: var(--title-txt-cl);
-    }
-    &__list {
-        /*  display: flex;
+}
+
+.container {
+    @extend %container;
+}
+
+.team__title {
+    @extend %title-h2;
+}
+
+.team__list {
+    @extend %list;
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
         flex-wrap: wrap;
-        gap: 30px;*/
     }
-    &__item {
-        margin-bottom: 30px;
-        margin-bottom: not(last-chill);
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        margin: -15px;
     }
-    &__wrapper {
-        border-top: none;
-        padding-top: 30px;
-        padding-bottom: 24px;
-        padding-left: 5px;
-        padding-right: 5px;
-        background: #ffffff;
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 0px 0px 4px 4px;
+
+}
+
+.team__item {
+    background-color: var(--primary-bgr-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    @media screen and (max-width:767px){
+        &:not(:last-child){
+            margin-bottom: 30px;
+        }
     }
-    &__hd {
-        margin-bottom: 10px;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: calc(19 / 16);
-        color: var(--title-txt-cl);
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        width: calc((100% - 15px*4)/2);
+        margin: 15px;
     }
-    &__txt {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: calc(19 / 16);
-        color: var(--main-txt-cl);
+    @media screen and (min-width:$desktop){
+        width: calc((100% - 30px*3)/4);
+        &:not(:last-child){
+            margin-right: 30px;
+        }
     }
 }
+.team__meta {
+    padding: 30px 0 24px 0;
+    @media screen and (min-width:$desktop){
+        padding: 30px 0;
+    }
+}
+
+.team__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    margin-bottom: 10px;
+}
+
+.team__position {
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--third-text-color);
+    margin-bottom: 16px;
+}
+
