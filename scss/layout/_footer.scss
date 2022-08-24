@@ -9,38 +9,28 @@
 
 .footer__item {
     @extend %container;
-
-    @media screen and (max-width: 767px) {
-        text-align: center;
-
-    }
-
     @media screen and (min-width: $tablet) {
         display: flex;
         flex-wrap: wrap;
+        text-align: center;
         align-items: baseline;
     }
-
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
         padding-left: 76px;
         padding-right: 89px;
     }
-
 }
 
 .footer-contacts {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $tablet) {
         margin-bottom: 60px;
     }
-
-    @media screen and (min-width:$tablet) and (max-width: 1199px) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
         margin-right: auto;
     }
-
-    @media screen and (min-width:$desktop) {
+    @media screen and (min-width: $desktop) {
         margin-right: 70px;
     }
-
 }
 
 .footer-contacts__list {
@@ -55,13 +45,10 @@
 
 .footer-contacts__link {
     @extend %link;
-
     line-height: 1.71;
     color: var(--footer-text-color);
     display: block;
     @include transition($property: color);
-
-
     &:hover,
     &:focus {
         color: var(--accent-color);
@@ -82,46 +69,40 @@
 }
 
 .footer-social {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $tablet) {
         margin-bottom: 60px;
     }
-
-    @media screen and (min-width:$desktop) {
+    @media screen and (min-width: $desktop) {
         margin-right: auto;
     }
 }
 
 .footer-subscribe {
-    @media screen and (min-width:$tablet) and (max-width: 1199px) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
         margin: 60px auto 0 auto;
         text-align: center;
         width: 450px;
     }
-
-    @media screen and (min-width:$desktop) {
+    @media screen and (min-width: $desktop) {
         width: 570px;
     }
 }
 
 .footer-subscribe__form {
-    @media screen and (min-width:$desktop) {
+    @media screen and (min-width: $desktop) {
         display: flex;
     }
-
 }
 
 .footer-subscribe__input {
     position: relative;
-
     @media screen and (max-width: 1199px) {
         margin-bottom: 20px;
         width: 100%;
     }
-
-    @media screen and (min-width:$desktop) {
+    @media screen and (min-width: $desktop) {
         width: 100%;
         margin-right: 12px;
-
     }
 }
 
@@ -137,49 +118,39 @@
     padding: 15px 16px;
     outline: none;
     @include transition(border-color);
-
     &:hover,
     &:focus {
         border-color: var(--accent-color);
     }
-
 }
 
 .footer-subscribe__placeholder {
     position: absolute;
     top: 0;
     left: 0;
-        transform: translate(17px, 16px);
-    
-
+    transform: translate(17px, 16px);
     font-size: 16px;
     line-height: 1.25;
     color: var(--footer-text-color);
-
     .footer-subscribe__form:focus+&,
     .footer-subscribe__field:not(:placeholder-shown)+& {
         opacity: 0;
         transform: translate(50px, 16px);
     }
-  @include transition((opacity,transform), $duration: 250ms);
-   
+    @include transition((opacity, transform), $duration: 250ms);
 }
 
 .footer-subscribe-btn {
     @extend %button;
-    @include centered-flex ($type: inline-flex);
+    @include centered-flex($type: inline-flex);
     height: 50px;
-
     padding: 0 28px;
     background-color: var(--accent-color);
     color: var(--second-text-color);
-
     font-weight: 700;
     line-height: 1.88;
     letter-spacing: 0.06em;
     @include transition(box-shadow);
-
-
     &:hover,
     &:focus {
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

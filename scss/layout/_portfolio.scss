@@ -8,81 +8,66 @@
 
 .filter {
     @extend %list;
-
     display: flex;
     flex-wrap: wrap;
-
     @media screen and (max-width: 767px) {
         margin-bottom: 40px;
     }
-
-    @media screen and (min-width:$tablet) {
+    @media screen and (min-width: $tablet) {
         justify-content: center;
     }
-
-    @media screen and (min-width:$tablet) and (max-width: 1199px) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
         margin-bottom: 30px;
     }
-
-    @media screen and (min-width:$desktop) {
+    @media screen and (min-width: $desktop) {
         margin-bottom: 50px;
     }
-
 }
-
 
 .filter__item {
     &:not(:last-child) {
         margin-right: 8px;
     }
-
     @media screen and (max-width: 767px) {
-        &:nth-child(-n+3) {
+        &:nth-child(-n + 3) {
             margin-bottom: 15px;
         }
-
     }
-
 }
 
 .filter__btn {
     @extend %button;
-
     color: var(--primary-text-color);
     background: var(--third-bgr-color);
     font-weight: 500;
     line-height: 1.62;
     letter-spacing: 0.03em;
     padding: 6px 22px;
-    @include transition ((background-color, box-shadow ,color));
-
-
+    @include transition((background-color, box-shadow, color));
     &:hover,
     &:focus {
         background-color: var(--accent-color);
         color: var(--second-text-color);
-        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-            0px 2px 2px rgba(0, 0, 0, 0.12);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     }
 }
 
 .filter__btn--active {
     background-color: var(--accent-color);
     color: var(--second-text-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/* Projects */
-.project {
-    @extend %list; 
 
-    @media screen and (min-width:$tablet) {
+/* Projects */
+
+.project {
+    @extend %list;
+    @media screen and (min-width: $tablet) {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        //    justify-content: center;
         gap: 30px;
-        
     }
 }
 
@@ -92,15 +77,11 @@
             margin-bottom: 30px;
         }
     }
-
-    @media screen and (min-width:$tablet) and (max-width: 1199px) {
-        width: calc((100% - 30px)/2);
-
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        width: calc((100% - 30px) / 2);
     }
-
     @media screen and (min-width: $desktop) {
-        width: calc((100% - 30px*2)/3);
-
+        width: calc((100% - 30px * 2) / 3);
     }
 }
 
@@ -109,9 +90,7 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    @include transition (box-shadow);
-
-
+    @include transition(box-shadow);
     &:hover,
     &:focus {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -124,33 +103,26 @@
 }
 
 .project__img {
-
-    @media screen and (min-width:$tablet) and (max-width:1199px) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
         max-width: 354px;
         height: 294px;
     }
-
-    @media screen and (min-width:$desktop) {
+    @media screen and (min-width: $desktop) {
         max-width: 370px;
         height: 294px;
-
     }
 }
 
 .project__overlay {
     content: '';
-
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-
     background-color: rgba(33, 150, 243, 0.9);
     transform: translateY(101%);
     @include transition(transform);
-
-
     .project__link:hover &,
     .project__link:focus & {
         transform: translateY(0);
@@ -162,7 +134,6 @@
     line-height: 1.56;
     color: var(--second-text-color);
     padding: 63px 24px;
-
     @media screen and (max-width: 450px) {
         padding: 32px 24px;
         font-size: 14px;
@@ -171,7 +142,6 @@
 
 .project__meta {
     border: 1px solid #eeeeee;
-
     border-top: none;
     padding: 20px 24px;
     flex-grow: 1;

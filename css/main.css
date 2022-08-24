@@ -300,6 +300,7 @@ address {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
   background-color: transparent;
   border: none;
   margin: 0;
@@ -835,6 +836,7 @@ address {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
   height: 120px;
   background-color: var(--third-bgr-color);
   border-radius: 4px;
@@ -898,6 +900,7 @@ address {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
   width: 100%;
   height: 23.8095238095%;
   background: var(--work-box-bg);
@@ -1030,6 +1033,7 @@ address {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
   width: 44px;
   height: 44px;
   border-radius: 50px;
@@ -1128,6 +1132,7 @@ address {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
   height: 92px;
   border: 1px solid var(--primary-icon-fill);
   border-radius: 4px;
@@ -1225,9 +1230,6 @@ address {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     gap: 30px;
   }
 }
@@ -1354,11 +1356,6 @@ address {
   padding: 60px 0;
 }
 
-@media screen and (max-width: 767px) {
-  .footer__item {
-    text-align: center;
-  }
-}
 @media screen and (min-width: 768px) {
   .footer__item {
     display: -webkit-box;
@@ -1366,6 +1363,7 @@ address {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    text-align: center;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -1378,7 +1376,7 @@ address {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .footer-contacts {
     margin-bottom: 60px;
   }
@@ -1426,7 +1424,7 @@ address {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .footer-social {
     margin-bottom: 60px;
   }
@@ -1539,6 +1537,7 @@ address {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
   height: 50px;
   padding: 0 28px;
   background-color: var(--accent-color);
@@ -1654,6 +1653,7 @@ address {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
   top: 8px;
   right: 8px;
   width: 30px;
@@ -1840,6 +1840,7 @@ address {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
   width: 16px;
   height: 15px;
   outline: 2px solid;
@@ -1867,6 +1868,7 @@ address {
 }
 
 .checkbox__text {
+  font-size: 12px;
   line-height: 1.71;
   color: var(--third-text-color);
   -ms-flex-negative: 6;
@@ -1878,7 +1880,7 @@ address {
 }
 @media screen and (max-width: 1199px) {
   .checkbox__text {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
